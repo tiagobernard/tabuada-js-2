@@ -1,2 +1,2 @@
-# Segunda versão da simples Tabuada desenvolvida em Javascript
-Para ver a tabuada funcionando [clique aqui](https://tiagobernardes.com.br/tabuada)
+# Segunda versão da simples Tabuada OnLine desenvolvida em Javascript
+Para ver a tabuada online funcionando [clique aqui](https://tiagobernardes.com.br/tabuada)
