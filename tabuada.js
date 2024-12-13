@@ -1,5 +1,4 @@
 document.querySelector('#entTabuada').focus();
-
 document.querySelector('#botao').addEventListener("click", event => {
     event.preventDefault();
 
@@ -42,14 +41,3 @@ document.querySelector('#reset').addEventListener("click", () => {
     tabuadaHTML.innerHTML = "";
     document.querySelector('#entTabuada').focus();
 });
-
-/*let conteudo = ['A', 'B', 'C', 'D']
-const listagemNomes = () => { }
-let ul = document.createElement('ul')
-conteudo.forEach((item, posicao, qtde) => {
-    listagemNomes(item);
-    let li= document.createElement('li')
-    ul.appendChild(li);
-    li.innerHTML = `${item} - ${posicao + 1} - ${qtde.length}`
-    listanomes.appendChild(ul)
-})*/
