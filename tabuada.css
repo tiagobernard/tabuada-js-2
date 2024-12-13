@@ -1,14 +1,44 @@
-
 body {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     background: linear-gradient(45deg, #c4e0e5 0%, #4ca1af 100%);
 }
 
-h1 {text-align: center;padding-bottom: 30px;color:#2b4e54!important}
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #2b4e54 !important
+}
+
+body div h1 i {
+    animation: balanco 800ms;
+    animation-iteration-count: 1;
+    animation-delay: 800ms;
+}
+
+@keyframes balanco {
+    0% {
+        transform: rotate(-50deg);
+    }
+    30% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg)
+    }
+    70% {
+        transform: rotate(20deg)
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 .tabuada {
     padding: 30px 0;
@@ -17,18 +47,18 @@ h1 {text-align: center;padding-bottom: 30px;color:#2b4e54!important}
     border-radius: 30px;
     font-size: 24px;
     color: #2b4e54;
-    background-color:#e3eff1;
+    background-color: #e3eff1;
     display: none;
     border: 2px groove #4ca1af;
 }
 
 button {
-    border:2px solid #4ca1af;
+    border: 2px solid #4ca1af;
     background-color: #fff;
-    font-size: 24px!important;
+    font-size: 24px !important;
     padding: 0 15px;
     color: #2b4e54;
-    border-radius: 5px!important;
+    border-radius: 5px !important;
 }
 
 .tabuada li {
@@ -44,39 +74,43 @@ button {
 }
 
 .classErro {
-    color:#a95265;
+    color: #a95265;
     font-size: 22px;
     width: 400px;
     margin-top: 30px;
     text-align: center;
     padding: 30px;
-    background-color:#f3e1e4;
+    background-color: #f3e1e4;
     display: none;
     border-radius: 15px;
 }
 
-form {text-align: center;}
+form {
+    text-align: center;
+}
 
 input {
     width: 50px;
     border: 2px solid #4ca1af;
-    font-size: 24px!important;
+    font-size: 24px !important;
     color: #2b4e54;
     border-radius: 5px;
     text-align: center;
 }
 
 @keyframes poing {
-    0% 
-    {
+    0% {
         transform: scale(.3)
     }
+
     35% {
         transform: scale(.7);
     }
+
     70% {
         transform: scale(.4);
     }
+
     100% {
         transform: scale(1);
     }
